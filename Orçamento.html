@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orçamento Click</title>
+  <link rel="stylesheet" href="CSS/Style.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <h2>SOLICITAÇÃO DE ORÇAMENTO</h2>
+
+    <!-- 🔹 DADOS DO CLIENTE (fixo no topo) -->
+    <div class="dados-cliente">
+      <h3>DADOS DO CLIENTE</h3>
+
+      <label for="nome">Nome do cliente:</label>
+      <input type="text" id="nome" name="nome" required>
+
+      <label for="email">E-mail do cliente:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="telefone">Telefone do cliente:</label>
+      <input type="tel" id="telefone" name="telefone" placeholder="(xx) xxxxx-xxxx" required>
+    </div>
+
+    <!-- 🔹 Botão duplicar -->
+    <div class="botoes-topo">
+      <button id="duplicarBtn" type="button">➕ Adicionar Orçamento</button>
+      <button id="enviarBtn" type="button" class="btn-enviar">📤 Enviar Orçamentos</button>
+    </div>
+
+    <!-- 🔹 Contêiner dos formulários -->
+    <div id="formsWrapper">
+      <form id="formOrcamento">
+        
+        <h3>ORÇAMENTO 1</h3>
+
+        <label for="servico">Pré-Cadastro:</label>
+        <select name="servico" required>
+          <option value="">Selecione...</option>
+          <option value="banner">Banner</option>
+          <option value="faixa">Faixa</option>
+          <option value="livro">Livro</option>
+          <option value="Livreto">Livreto</option>
+          <option value="Revista">Revista</option>
+          <option value="acm">ACM</option>
+          <option value="PS2MM">PS 2mm</option>
+          <option value="PS1MM">PS 1mm</option>
+        </select>
+
+        <label for="descricao">Descrição:</label>
+        <input type="text" name="descricao" placeholder="Digite o material" required>
+
+        <label for="quantidade">Quantidade:</label>
+        <input type="number" name="quantidade" placeholder="Quantidade" required>
+
+        <label for="cor">Cor:</label>
+          <select name="cor" required>
+            <option value="">Selecione...</option>
+            <option value="4x4">4x4</option>
+            <option value="4x0">4x0</option>
+            <option value="1x1">1x1</option>
+            <option value="1x4">1x4</option>
+            <option value="4x1">4x1</option>
+          </select>
+
+           <label for="servico">Substrato:</label>
+        <select name="servico" required>
+          <option value="">Selecione...</option>
+          <option value="banner">Lona</option>
+          <option value="Couche">Couche 115gr</option>
+          <option value="Couche">Couche 150gr</option>
+          <option value="Couche">Couche 170gr</option>
+          <option value="Couche">Couche 210gr</option>
+           <option value="Couche">Couche 300gr</option>
+          <option value="Off-set">Off-set 90gr</option>
+          <option value="Off-set">Off-set 150gr</option>
+          <option value="Off-set">Off-set 240gr</option>
+          <option value="SupremoDUO">Supremo DUO 240gr</option>
+          <option value="SupremoDUO">Supremo DUO 300gr</option>
+          <option value="oliestireno">Poliestireno 2mm</option>
+          <option value="oliestireno">Poliestireno 1mm</option>
+        </select>
+
+
+          <label for="substrato">Substrato</label>
+          <input type="text" name="substrato" placeholder="Substrato" required>
+
+          <label for="acabamento">Acabamento</label>
+          <input type="text" name="acabamento" placeholder="Acabamento" required>
+
+        <label for="observacao">Observação:</label>
+        <textarea name="observacao" rows="3" placeholder="Alguma observação?"></textarea>
+      </form>
+    </div>
+
+  </div>
+
+  <script src="JS/Script.js"></script>
+</body>
+
+</html>

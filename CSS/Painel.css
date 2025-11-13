@@ -1,0 +1,56 @@
+/* ======== ESTILO GERAL ======== */
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  background: linear-gradient(135deg, #dfe9f3, #cfd8dc);
+  margin: 0;
+  padding: 0;
+  color: #012447;
+}
+
+/* ======== CABEÇALHO ======== */
+header {
+  background: linear-gradient(135deg, #012447, #174469);
+  color: white;
+  padding: 18px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+  font-size: 22pt;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+header button {
+  background: linear-gradient(135deg, #044396, #06335e);
+  border: none;
+  color: white;
+  padding: 12px 22px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 14px rgba(56, 142, 60, 0.3);
+  animation: pulse 2s infinite;
+}
+
+header button:hover {
+  background: linear-gradient(135deg, #0d134b, #171075);
+  transform: scale(1.08);
+}
+
+/* ======== CONTAINER PRINCIPAL ======== */
+.container {
+  display: flex;
+  height: calc(100vh - 90px);
+  margin: 30px;
+  background: #fdfdfd;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}

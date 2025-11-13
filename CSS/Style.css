@@ -1,0 +1,232 @@
+/* ======== ESTILO GERAL ======== */
+body {
+    font-family: "Poppins", Arial, sans-serif;
+    background: linear-gradient(135deg, #dfe9f3, #cfd8dc);
+    margin: 0;
+    padding: 0;
+}
+
+/* ======== CONTAINER ======== */
+.container {
+    max-width: 650px;
+    background: #fdfdfd;
+    margin: 50px auto;
+    padding: 35px;
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* ======== TÍTULOS ======== */
+h2 {
+    text-align: center;
+    background: linear-gradient(135deg, #012447, #174469);
+    color: white;
+    padding: 14px;
+    font-size: 22pt;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    text-transform: uppercase;
+}
+
+h3 {
+    text-align: center;
+    font-size: 13pt;
+    display: inline-block;
+    border-radius: 8px;
+    padding: 8px 15px;
+    color: #1976d2;
+    background: #e3f2fd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* ======== FORMULÁRIO ======== */
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: 600;
+    color: #000000;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px 12px;
+    margin-top: 6px;
+    border: 1px solid #0a0157;
+    border-radius: 6px;
+    font-size: 15px;
+    outline: none;
+    transition: all 0.25s ease;
+    background: #fafafa;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #1976d2;
+    box-shadow: 0 0 6px rgba(25, 118, 210, 0.3);
+    background-color: #fff;
+}
+
+/* ======== BOTÕES BASE ======== */
+button {
+    margin-top: 20px;
+    width: 100%;
+    background: linear-gradient(135deg, #1976d2, #42a5f5);
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+button i {
+    margin-right: 8px;
+}
+
+/* ✨ Efeito de brilho ao clicar */
+button::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 50%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3);
+    transform: skewX(-20deg);
+    transition: left 0.5s ease;
+}
+
+button:hover::after {
+    left: 125%;
+}
+
+/* ======== BOTÃO DUPLICAR ======== */
+#duplicarBtn {
+    width: auto;
+    display: block;
+    margin: 25px auto;
+    background: linear-gradient(135deg, #044396, #06335e);
+    padding: 14px 30px;
+    font-size: 17px;
+    border-radius: 50px;
+    box-shadow: 0 6px 14px rgba(56, 142, 60, 0.3);
+    animation: pulse 2s infinite;
+    transition: transform 0.2s ease;
+}
+
+#enviarBtn {
+    width: 400px;
+    display: block;
+    margin: 30px auto;
+    background: linear-gradient(135deg, #044396, #06335e);
+    padding: 14px 30px;
+    font-size: 17px;
+    border-radius: 50px;
+    box-shadow: 0 6px 14px rgba(56, 142, 60, 0.3);
+    animation: pulse 2s infinite;
+    transition: transform 0.2s ease;
+}
+
+
+enviarbtn {
+width: auto;
+    display: block;
+    margin: 25px auto;
+    background: linear-gradient(135deg, #044396, #06335e);
+    padding: 14px 30px;
+    font-size: 17px;
+    border-radius: 50px;
+    box-shadow: 0 6px 14px rgba(56, 142, 60, 0.3);
+    animation: pulse 2s infinite;
+    transition: transform 0.2s ease;
+    
+}
+
+#duplicarBtn:hover {
+    background: linear-gradient(135deg, #0d134b, #171075);
+    transform: scale(1.08);
+}
+
+/* 💫 Animação de "pulso" do botão duplicar */
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(2, 4, 90, 0.5); }
+    70% { box-shadow: 0 0 0 10px rgba(56, 142, 60, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(56, 142, 60, 0); }
+}
+
+/* ======== BOTÃO EXCLUIR ======== */
+.btn-excluir {
+    background: linear-gradient(135deg, #e53935, #ef5350);
+    color: white;
+    width: auto;
+    padding: 9px 16px;
+    border-radius: 6px;
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    margin-left: auto;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(229, 57, 53, 0.3);
+}
+
+.btn-excluir i {
+    transition: transform 0.3s ease;
+}
+
+.btn-excluir:hover {
+    background: linear-gradient(135deg, #c62828, #f44336);
+    transform: scale(1.05);
+}
+
+.btn-excluir:hover i {
+    transform: rotate(-15deg);
+}
+
+/* ======== BOTÃO ENVIAR ======== */
+button[type="submit"] {
+    background: linear-gradient(135deg, #012447, #174469);
+}
+
+button[type="submit"]:hover {
+    background: linear-gradient(135deg, #01305b, #1d5582);
+    transform: scale(1.03);
+}
+
+/* ======== MENSAGEM ======== */
+.mensagem {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+    display: none;
+}
+
+/* ======== ANIMAÇÃO FORM DUPLICADO ======== */
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+form {
+    animation: aparecer 0.4s ease;
+}
+
